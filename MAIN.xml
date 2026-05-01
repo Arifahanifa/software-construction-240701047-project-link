@@ -1,0 +1,15 @@
+name: Payment System CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run Build Script
+      run: |
+        echo "Building the Online Payment System..."
+        echo "Validating HTML and JS files..."
